@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rango</title>
+</head>
+<body>
+	<input  type="number" name="número" placeholder="Ingrese un número" id="num" ><br>
+	<button onclick="comprobar()">click para comprobar</button>
+	<div id="Texto"></div>
+</body>
+<script type="text/javascript">
+	function comprobar()
+		{
+			var numero = document.getElementById("num").value;
+			if (numero>=20||numero<=100) 
+			{
+				document.getElementById("Texto").innerHTML="<b style='color:green'>"+"Esta dentro del rango de 20y100"+"</b>";
+			}
+			if (numero>=20||numero<=200)
+			{
+				document.getElementById("Texto").innerHTML= "<b style='color:green'>"+"Esta dentro del rango de 20y200"+"</b>";
+			}else{
+				document.getElementById("Texto").innerHTML= "<b style='color:red'>"+"No esta en ningun rango"+"</b>";
+			}
+		}	
+</script>
+</html>
